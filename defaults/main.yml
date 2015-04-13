@@ -1,2 +1,7 @@
 ---
-# defaults file for /home/thy/usr/thydel/ar-r-base
+# defaults file for ar-r-base
+
+rbase_keyserver: keys.gnupg.net
+rbase_id: 381BA480
+rbase_repo: deb http://cran.rstudio.com/bin/linux/debian wheezy-cran3/
+rbase_state: present

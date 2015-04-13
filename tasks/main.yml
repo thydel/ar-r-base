@@ -1,2 +1,20 @@
 ---
-# tasks file for /home/thy/usr/thydel/ar-r-base
+
+# http://cran.r-project.org/bin/linux/debian/README.html
+
+- apt_key:
+    keyserver: "{{ rbase_keyserver }}"
+    id: "{{ rbase_id }}"
+    state: "{{ rbase_state }}"
+  environment:
+    https_proxy: https_proxy | default(omit)
+
+- apt_repository:
+    repo: "{{ rbase_repo }}"
+    state: "{{ rbase_state }}"
+
+- apt:
+    name: r-base
+    state: "{{ rbase_state }}"
+    purge: True
+
