@@ -19,7 +19,7 @@ https_proxy: # use to set environment https_proxy, default(omit)
 - hosts: servers
   roles:
     - role: thydel.r-base
-      http_proxy: http://my.proxy.tld:3128
+      https_proxy: http://my.proxy.tld:3128
 ```
 
 ## Usage
