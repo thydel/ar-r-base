@@ -1,6 +1,7 @@
 The MIT License (MIT)
 
 Copyright (c) 2014 EpiConcept
+
 Author: Thierry Delamare
 
 Permission is hereby granted, free of charge, to any person obtaining
